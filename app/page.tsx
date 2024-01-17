@@ -4,23 +4,27 @@ import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import React,{useEffect, useState} from "react";
 
+// Import statements...
 
-function page() {
-  const [isClient, setIsClient] = useState(false)
- 
+function Page() {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
+
   return (
     <main>
-      {/* <!-- Hero Section --> */}
+      {/* Hero Section */}
       <Hero />
 
-      {/* banner */}
+      {/* Banner */}
       <BannerComponent />
-      {/* <!-- Features Section --> */}
+
+      {/* Features Section */}
       <Features />
-      {/* <!-- Call-to-Action Section --> */}
+
+      {/* Call-to-Action Section */}
       <section className="bg-cyan-600 py-16 text-white dark:bg-gray-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -41,4 +45,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
