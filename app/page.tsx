@@ -2,16 +2,10 @@
 import BannerComponent from "@/components/BannerComponent";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import React,{useEffect, useState} from "react";
 
 // Import statements...
 
 function Page() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   return (
     <main>

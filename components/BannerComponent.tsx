@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "./ui/button";
-
 function BannerComponent() {
   return (
     <section className="bg-gray-100-700 text-black py-16  dark:bg-gray-800">
@@ -13,7 +12,7 @@ function BannerComponent() {
             <p className="mb-4">
               Fret not! Polyglot Chat comes equipped with advanced language
               support, allowing you to express yourself without limitations.
-              Whether you&apos;re conversing with friends, family, or colleagues from
+              Whether you're conversing with friends, family, or colleagues from
               around the world, our platform ensures that language is never a
               barrier to meaningful communication.
             </p>
@@ -42,8 +41,8 @@ function BannerComponent() {
             <p className="mb-4">
               Polyglot Chat adapts to your preferences, allowing you to
               customize language settings, choose your preferred interface, and
-              personalize your chatting experience. It&apos;s not just a chat
-              platform; it&apos;s your personalized multilingual communication
+              personalize your chatting experience. It's not just a chat
+              platform; it's your personalized multilingual communication
               solution.
             </p>
           </div>
