@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import { MessageSquarePlusIcon } from "lucide-react";
 import { useToast } from "./use-toast";
+import LoadingSpinner from "./LoadingSpinner";
 
 function CreateChatButton({ isLarge }: { isLarge?: boolean }) {
   // const { data: session } = useSession();
