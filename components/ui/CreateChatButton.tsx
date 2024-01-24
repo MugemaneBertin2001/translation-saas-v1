@@ -6,8 +6,8 @@ import { Button } from "./button";
 import { MessageSquarePlusIcon } from "lucide-react";
 import { useToast } from "./use-toast";
 import LoadingSpinner from "./LoadingSpinner";
-import { useSession } from "@clerk/nextjs";
-import {v4 as uuidv4} from "uuid"
+
+import { v4 as uuidv4 } from "uuid";
 
 function CreateChatButton({ isLarge }: { isLarge?: boolean }) {
   // const { data: sessions } = useSession();
@@ -17,18 +17,18 @@ function CreateChatButton({ isLarge }: { isLarge?: boolean }) {
   // const subscription = useSubscriptionStore((state) => state.subscription);
 
   const createNewChat = async () => {
-    if (!session?) return;
+    // if (!session?) return;
     setLoading(true);
     toast({
       title: "creating new chat...",
-      description:"Hold tight while we create new chat...",
-      duration:3000,
+      description: "Hold tight while we create new chat...",
+      duration: 3000,
     });
-// check if user is pro and limit them creating a new chat
 
-   const chatId = uuidv4();
+    // check if user is pro and limit them creating a new chat
 
-   
+    const chatId = uuidv4();
+
     router.push("/chat/abc");
   };
 
