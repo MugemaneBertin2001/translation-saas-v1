@@ -38,7 +38,7 @@ export default function RootLayout({
             <Header />
             <div>{children}</div>
             <Toaster />
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
 
           <script

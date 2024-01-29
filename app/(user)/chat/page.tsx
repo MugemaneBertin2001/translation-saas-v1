@@ -1,3 +1,4 @@
+import ChatList from "@/components/ui/ChatList";
 import React from "react";
 type Props = {
   params: {};
@@ -8,11 +9,10 @@ type Props = {
 
 function ChatsPage({ searchParams: { error } }: Props) {
   return (
-    <div>
+    <div className="mt-20">
       {/* Chat permission chats */}
-
       {/* Chat list */}
-      {/* <ChatList /> */}
+      <ChatList />
     </div>
   );
 }

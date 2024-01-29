@@ -29,7 +29,33 @@ function CreateChatButton({ isLarge }: { isLarge?: boolean }) {
 
     const chatId = uuidv4();
 
-    router.push("/chat/abc");
+    // await setDoc(addChatRef(chatId, sesseion.user.id), {
+    //   userID: sessionStorage.user.id,
+    //   email: sessionStorage.user.email!,
+    //   timestamp: serverTimestamp(),
+    //   isAdmin: true,
+    //   chatId: chatId,
+    //   image: session.user.image || "",
+    // })
+    // .then(() => {
+    //   toast({
+    //     title: "success",
+    //     description: "Your chat has been created",
+    //     className: "bg-green-600 text-white",
+    //     duration: 2000,
+    //   });
+    //   router.push("/chat/abc");
+    // })
+    // .catch(() => {
+    //   toast({
+    //     title: "Error",
+    //     description: "There was an error creating your chat",
+    //     variant: "destructive",
+    //   });
+    // })
+    // .finally(() => {
+    //   setLoading(false);
+    // });
   };
 
   if (isLarge) {
