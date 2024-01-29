@@ -1,12 +1,11 @@
-"use client"
+"use client";
 import BannerComponent from "@/components/BannerComponent";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-
+import Footer from "@/components/Footer";
 // Import statements...
 
 function Page() {
-
   return (
     <main>
       {/* Hero Section */}
@@ -35,6 +34,7 @@ function Page() {
           </a>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
