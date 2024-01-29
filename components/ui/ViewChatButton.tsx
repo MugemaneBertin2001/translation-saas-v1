@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation'
 function ViewChatButton() {
   const Router = useRouter();
   const createChat = async ()=>{
-    Router.push(`/chat/chatId`)
+    Router.push(`/chat/`)
 
   }
   return (
