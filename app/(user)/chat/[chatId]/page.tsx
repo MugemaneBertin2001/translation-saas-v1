@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
+import ChatRoom from '@/components/ChatRoom'
+import PageTrunk from '@/components/ui/PageTrunk'
 
-function ChatPage() {
-  return (
-    <>
-      {/* admin controls */}
-      {/* ChatMemberBadge */}
+function SinglechatsPage() {
+    
 
-      {/* ChatMessages */}
-      {/* ChatInput */}
-    </>
-  );
+    return (
+        <div className="overflow-auto my-20 mx-auto px-2">
+            <ChatRoom />
+        </div>
+    )
 }
 
-export default ChatPage;
+export default SinglechatsPage

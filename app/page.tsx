@@ -1,23 +1,24 @@
 "use client";
+import React,{useEffect, useState} from "react";
 import BannerComponent from "@/components/BannerComponent";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-// Import statements...
 
-function Page() {
+
+
+function page() {
+
   return (
     <main>
-      {/* Hero Section */}
+      {/* <!-- Hero Section --> */}
       <Hero />
 
-      {/* Banner */}
+      {/* banner */}
       <BannerComponent />
-
-      {/* Features Section */}
+      {/* <!-- Features Section --> */}
       <Features />
-
-      {/* Call-to-Action Section */}
+      {/* <!-- Call-to-Action Section --> */}
       <section className="bg-cyan-600 py-16 text-white dark:bg-gray-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -39,4 +40,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default page;
