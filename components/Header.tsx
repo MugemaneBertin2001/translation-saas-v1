@@ -1,20 +1,20 @@
-'use client'
-import React ,{useState}from 'react'
-import Logo from './Logo'
-import { DarkModeToggle } from './ui/DarkModeToggle'
-import CreateChatButton from './ui/CreateChatButton'
-import ViewChatButton from './ui/ViewChatButton'
-import PricingButton from './ui/PricingButton'
-import AccountButton from './ui/UserButton'
-import DownloadButton from './DownloadButton'
-import { useUser } from '@clerk/nextjs'
+"use client";
+import React, { useState } from "react";
+import Logo from "./Logo";
+import { DarkModeToggle } from "./ui/DarkModeToggle";
+import CreateChatButton from "./ui/CreateChatButton";
+import ViewChatButton from "./ui/ViewChatButton";
+import PricingButton from "./ui/PricingButton";
+import AccountButton from "./ui/UserButton";
+import DownloadButton from "./DownloadButton";
+import { useUser } from "@clerk/nextjs";
+import LanguageSelect from "./ui/LanguageSelect";
 
 function Header() {
+  const user = useUser();
 
-  const user = useUser()
-
-  const fileName = ''; // 
-  const downloadUrl = 'www.playstore.com/polyglotalk'; 
+  const fileName = ""; //
+  const downloadUrl = "www.playstore.com/polyglotalk";
   return (
   <header>
      <nav className="bg-white dark:bg-gray-900 fixed w-full  z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
@@ -62,16 +62,13 @@ function Header() {
       )}
           <li>
                 <DarkModeToggle />
-          </li>
-          <li>
-             
-          </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
