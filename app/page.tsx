@@ -8,11 +8,7 @@ import Footer from "@/components/Footer";
 
 
 function page() {
-  const [isClient, setIsClient] = useState(false)
- 
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+
   return (
     <main>
       {/* <!-- Hero Section --> */}

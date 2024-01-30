@@ -10,7 +10,6 @@ const MessageList: React.FC = () => {
     console.log('Sending message:', message);
 
   };
-  console.log(mockMessages)
  
   return (
     <div className={`flex flex-col h-fit w-full py-auto `}>

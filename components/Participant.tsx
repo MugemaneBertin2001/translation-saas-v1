@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaUser } from 'react-icons/fa';
 
@@ -11,7 +12,7 @@ const Participant: React.FC<ParticipantProps> = ({ imageName, role, fullName }) 
   return (
     <div className="flex flex-row items-center space-x-4 p-4 bg-white border border-gray-300 rounded-md text-black">
     {imageName ? (
-      <img
+      <Image
         src={`/images/${imageName}`} // Assuming your images are in a folder named "images"
         alt={imageName}
         className="rounded-full w-16 h-16 object-cover"

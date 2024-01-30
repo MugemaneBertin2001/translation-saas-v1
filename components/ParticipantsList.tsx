@@ -3,24 +3,24 @@ import Participant from './Participant'
 import mockMessages from './mockMessages'
 
 const participants =[
-  // {
-  //   id:1 ,
-  //   fullName:'John',
-  //   imageName:'',
-  //   role:'admin',
-  // },
-  // {
-  //   id:2 ,
-  //   fullName:'Alice',
-  //   imageName:'',
-  //   role:'user',
-  // },
-  // {
-  //   id:3 ,
-  //   fullName:'Bob',
-  //   imageName:'',
-  //   role:'user',
-  // },
+  {
+    id:1 ,
+    fullName:'John',
+    imageName:'',
+    role:'admin',
+  },
+  {
+    id:2 ,
+    fullName:'Alice',
+    imageName:'',
+    role:'user',
+  },
+  {
+    id:3 ,
+    fullName:'Bob',
+    imageName:'',
+    role:'user',
+  },
 ];
 
 const ParticipantsList: React.FC = () => {
