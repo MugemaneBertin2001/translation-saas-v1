@@ -1,5 +1,5 @@
-
-import React from 'react'
+'use client'
+import React ,{useState}from 'react'
 import Logo from './Logo'
 import { DarkModeToggle } from './ui/DarkModeToggle'
 import CreateChatButton from './ui/CreateChatButton'
@@ -7,19 +7,36 @@ import ViewChatButton from './ui/ViewChatButton'
 import PricingButton from './ui/PricingButton'
 import { Button } from './ui/button'
 import AccountButton from './ui/UserButton'
+// import LanguageDropdown from './ui/LanguageDropdown'
 
 function Header() {
+  const [selectedLanguage, setSelectedLanguage] =  useState({
+    label: 'English',
+    value: 'en',
+  });
+
+  const languages = [
+    { label: 'English', value: 'en' },
+    { label: 'French', value: 'fr' },
+    { label: 'German', value: 'de' },
+  ];
+
+  // const handleLanguageSelect = () => {
+  //   setSelectedLanguage(language);
+  // };
+
   return (
   <header>
      <nav className="bg-white dark:bg-gray-900 fixed w-full  z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Logo />
-        <div className="flex md:order-2">
-          <Button className='dark:bg-gray-100'
-            
-          >
-            Download
-          </Button>
+        <div className="flex md:order-2 gap-2">
+          {/* <LanguageDropdown
+          selectedLanguage={selectedLanguage}
+          languages={languages}
+          onSelect={handleLanguageSelect}
+
+          /> */}
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
@@ -44,23 +61,22 @@ function Header() {
             />
             </svg>
           </button>
+          <AccountButton />  
         </div>
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            
-                  <ViewChatButton />
-                  <CreateChatButton />
-            
+              <ViewChatButton />
+              <CreateChatButton />
               <PricingButton />
-            <li>
+          <li>
              
                 <DarkModeToggle />
-            </li>
-              <li>
-                <AccountButton />  
+          </li>
+          <li>
+             
           </li>
           </ul>
         </div>
