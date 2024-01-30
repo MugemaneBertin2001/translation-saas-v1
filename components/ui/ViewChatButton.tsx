@@ -9,6 +9,7 @@ function ViewChatButton() {
   const Router = useRouter();
   const createChat = async ()=>{
     Router.push(`/chat/`)
+    Router.push(`/chat`)
 
   }
   return (
