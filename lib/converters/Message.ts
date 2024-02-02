@@ -27,7 +27,7 @@
 //     [K in LanguagesSupported]?: string;
 //   };
 //   // ...other fields
-// };
+// }
 
 // const messageConverter: FirestoreDataConverter<Message> = {
 //   toFirestore: function (message: Message): DocumentData {
