@@ -78,11 +78,12 @@ function LanguageSelect() {
         <SelectValue placeholder="English" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="light">German</SelectItem>
-        <SelectItem value="dark">French</SelectItem>
-        <SelectItem value="system">Hindi</SelectItem>
-        <SelectItem value="system">Spanish</SelectItem>
-        <SelectItem value="system">Kinyarwanda</SelectItem>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="gen">German</SelectItem>
+        <SelectItem value="fr">French</SelectItem>
+        <SelectItem value="Hindi">Hindi</SelectItem>
+        <SelectItem value="Spanish">Spanish</SelectItem>
+        <SelectItem value="Kiny">Kinyarwanda</SelectItem>
       </SelectContent>
     </Select>
   );
