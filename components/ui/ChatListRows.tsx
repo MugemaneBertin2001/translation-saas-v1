@@ -36,6 +36,9 @@ function ChatListRows(/*{ initialChats }: { initialChats: ChatMembers[] }*/) {
       <ChatListRow />
       <ChatListRow />
       <ChatListRow />
+      <ChatListRow />
+      <ChatListRow />
+      <ChatListRow />
     </div>
   );
 }
