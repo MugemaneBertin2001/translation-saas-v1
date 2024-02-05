@@ -18,6 +18,7 @@ const PageTrunk: React.FC<ParentComponentProps> = ({ children, title }) => {
           </div>
         </div>
       </div>
+      Hi, Bena Ndagaano, I am not yet invited to Slack and i didn't receive any kind of email inviting me, help
     </div>
   );
 };
