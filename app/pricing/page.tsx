@@ -2,6 +2,7 @@ import React from "react";
 import PageTrunk from "../../components/ui/PageTrunk";
 import Card from "../../components/ui/card";
 import { tiers } from "../../pricingPlanTier";
+import PricingCards from "@/components/ui/PricingCards";
 const Pricing = () => {
   return (
     <div className="isolate overflow-hidden bg-gray-900">
@@ -41,7 +42,9 @@ const Pricing = () => {
         </div>
       </div>
       <div className="flow-root bg-white pb-24 sm:pb-32">
-        <div className="-mt-80">{/* <PricingCards redirect={true} /> */}</div>
+        <div className="-mt-80">
+          <PricingCards redirect={true} />
+        </div>
       </div>
     </div>
     // <PageTrunk title="Pricing Plan">
