@@ -12,13 +12,13 @@ const Pricing = () => {
             Pricing
           </h2>
           <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            The right price for your
+            The right price for you,{" "}
             <br className="hidden sm:inline lg:hidden" />
             whoever you are
           </p>
         </div>
         <div className="relative mt-6">
-          <p className="mx-auto max-w-2xl text-lg leading-0 text-white/60">
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
             Were 99% sure we have a plan to match 100% of your needs
           </p>
           <svg
@@ -47,19 +47,6 @@ const Pricing = () => {
         </div>
       </div>
     </div>
-    // <PageTrunk title="Pricing Plan">
-    //   {tiers.map((tier) => {
-    //     return (
-    //       <Card
-    //         plan={tier.name}
-    //         key={tier.id}
-    //         description={tier.description}
-    //         price={tier.priceMonthly}
-    //         features={tier.features}
-    //       />
-    //     );
-    //   })}
-    // </PageTrunk>
   );
 };
 

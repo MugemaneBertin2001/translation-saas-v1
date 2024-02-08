@@ -1,5 +1,5 @@
+import PricingCards from "@/components/ui/PricingCards";
 import React from "react";
-import Pricing from "../pricing/page";
 
 async function Register() {
   return (
@@ -19,20 +19,20 @@ async function Register() {
             <ellipse
               cx={604}
               cy={512}
-              fill="url(#radial-gradient)"
+              fill="url(#radial-gradient-pricing)"
               rx={604}
               ry={512}
             />
             <defs>
-              <radialGradient id="radial-gradient">
-                <stop stopColor="#777506" />
+              <radialGradient id="radial-gradient-pricing">
+                <stop stopColor="#7775D6" />
                 <stop offset={1} stopColor="#E935C1" />
               </radialGradient>
             </defs>
           </svg>
         </div>
       </div>
-      {/* <Pricing/> */}
+      <PricingCards redirect={false} />
     </div>
   );
 }
