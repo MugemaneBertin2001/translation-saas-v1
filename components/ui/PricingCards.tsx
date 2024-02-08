@@ -19,7 +19,7 @@ export const tiers = [
   },
   {
     name: "Standard",
-    id: null,
+    id: "4555",
     href: "#",
     priceMonthly: "€10",
     description: "Unlock full potential with Pro!",
