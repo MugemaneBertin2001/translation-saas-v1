@@ -1,14 +1,10 @@
 "use client";
-import React,{useEffect, useState} from "react";
 import BannerComponent from "@/components/BannerComponent";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
-
-
 function page() {
-
   return (
     <main>
       {/* <!-- Hero Section --> */}
